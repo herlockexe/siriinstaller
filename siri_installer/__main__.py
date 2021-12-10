@@ -114,7 +114,7 @@ if __name__ == "__main__":
 
     if os.path.isdir("./HerlockUserbot/"):
         rm_r("./HerlockUserbot/")
-    repo = Repo.clone_from(str1,"./SiriUserBot/", branch="main")
+    repo = Repo.clone_from(str1,"./HerlockUserbot/", branch="main")
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
     config = app.config()
